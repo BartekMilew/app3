@@ -33,7 +33,7 @@ function App() {
 
         {/* Conditionally render iframe */}
         {showIframe && (
-          <div style={{ marginTop: "20px", width: "40%", height: "100px" }}>
+          <div style={{ marginTop: "20px", width: "80%", height: "100px" }}>
             <iframe
               src="https://app2-sand.vercel.app/"
               width="100%"
