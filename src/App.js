@@ -7,7 +7,7 @@ function App() {
   // Function to open the external website in a new tab
   const openNewTab = () => {
     window.open(
-      "https://app2-sand.vercel.app/",
+      "https://app1a-071c852a3c31.herokuapp.com/",
       "Click",
       "height=600, width=400"
     );
@@ -35,7 +35,7 @@ function App() {
         {showIframe && (
           <div style={{ marginTop: "20px", width: "80%", height: "100px" }}>
             <iframe
-              src="https://app2-sand.vercel.app/"
+              src="https://app1a-071c852a3c31.herokuapp.com/"
               width="100%"
               height="100%"
               title="External Website"
