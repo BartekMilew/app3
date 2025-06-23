@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import "./App.css";
+import keepTabAlive from "./keep-tab-alive";
 
 function App() {
   const [showIframe, setShowIframe] = useState(false);
 
   // Function to open the external website in a new tab
   const openNewTab = () => {
+    keepTabAlive.createTabContext();
     window.open(
       "https://app1a-071c852a3c31.herokuapp.com/",
       "Click",
@@ -29,6 +31,11 @@ function App() {
         {/* Button to toggle iframe */}
         <button onClick={toggleIframe} style={{ marginLeft: "10px" }}>
           {showIframe ? "Hide Iframe" : "Open Website in Iframe"}
+        </button>
+
+        {/* Button to clear keepAliveContext */}
+        <button onClick={keepTabAlive.clearTabContext} style={{ marginTop: "10px" }}>
+          Clear tab context (stop sound)
         </button>
 
         {/* Conditionally render iframe */}
